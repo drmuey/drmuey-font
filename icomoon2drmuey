@@ -1,0 +1,12 @@
+#!/bin/sh
+
+perl -pi -e 's{icomoon}{drmuey-icomoon}g;s{icon-}{icon-drmuey-}' style.css
+
+perl -pi -e 's{style\.css}{drmuey-font\.css}g;s{icon-}{icon-drmuey-}' demo.html
+
+mv style.css drmuey-font.css
+
+mv fonts/icomoon.eot fonts/drmuey-icomoon.eot
+mv fonts/icomoon.svg fonts/drmuey-icomoon.svg
+mv fonts/icomoon.ttf  fonts/drmuey-icomoon.ttf
+mv fonts/icomoon.woff fonts/drmuey-icomoon.woff
